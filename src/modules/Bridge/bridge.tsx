@@ -53,19 +53,49 @@ export function Bridge({
                             </header>
                             <div className='walletsBlock'>
                                 <div className='blockWallet'>
-                                    <SvgIconEver />
+                                    <div>
+                                        <SvgIconEver />
+                                        EVER
+                                    </div>
+                                    <div>
+                                        12,968.00
+                                    </div>
 
                                 </div>
                                 <div className='blockWallet'>
-                                    <SvgIconNear />
+
+                                    <div>
+                                        <SvgIconNear />
+                                        NEAR
+                                    </div>
+                                    <div>
+                                        12,968.00
+                                    </div>
 
                                 </div>
                                 <div className='blockWallet'>
-                                    <SvgIconAvax />
+
+                                    <div>
+                                        <SvgIconAvax />
+                                        AVAX
+                                    </div>
+                                    <div>
+                                        12,968.00
+                                    </div>
 
                                 </div>
                                 <div className='blockWallet'>
-                                    <SvgIconAda />
+
+                                    <div>
+
+                                        <SvgIconAda />
+                                        ADA
+
+
+                                    </div>
+                                    <div className='comingSoon'>
+                                        Coming Soon
+                                    </div>
 
                                 </div>
 
