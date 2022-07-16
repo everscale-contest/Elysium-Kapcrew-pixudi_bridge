@@ -43,7 +43,7 @@
 
     &.btn--md {
         font-size: 16px;
-        height: 44px;
+        height: 50px;
         letter-spacing: 0.25px;
         line-height: 42px;
         padding: 0 18px;
@@ -80,24 +80,30 @@
 }
 
 .btn--primary {
-    background-color: #c5e4f3;
-    color: #050a2e;
+    // background-color: #c5e4f3;
+    color: #fff;
+    background: linear-gradient(180deg, #FFA800 0%, #FF4D00 100%);
 
+    opacity: 0.8;
+    border-radius: 41px;
     &:hover,
     &:focus {
         background-color: #b2cedf;
-        color: #050a2e;
+        color: #fff;
+        opacity: 1;
     }
 
     &:active {
         background-color: #9fb9cc;
-        color: #050a2e;
+        color: #fff;
+        opacity: 1;
     }
 
     &[disabled],
     &:disabled {
-        background-color: rgb(197 228 243 / 32%);
-        color: #050a2e;
+        opacity: 0.5;
+        // background-color: rgb(197 228 243 / 32%);
+        color: #fff;
     }
 }
 
@@ -124,13 +130,14 @@
 }
 
 .btn--tertiary {
+    border-radius: 8px;
     background-color: transparent;
-    border: 1px solid rgb(197 228 243 / 32%);
+    border: 2px solid #ff7b0054;
     color: #c5e4f3;
 
     &:hover,
     &:focus {
-        border-color: rgb(197 228 243 / 56%);
+        border: 2px solid #ff7b0093;
         color: #c5e4f3;
     }
 

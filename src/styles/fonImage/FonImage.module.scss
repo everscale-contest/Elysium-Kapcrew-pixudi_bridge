@@ -1,0 +1,21 @@
+// @import "/scss";
+
+.fon{
+  width: 100%;
+  min-height: 100%;
+  // min
+  background-image: url("../../assets/startScreen/FonDesktop.png");
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+  // opacity: 0.5;
+  // overflow: hidden;
+  // border: 10px solid #000;
+}
+.content{
+  opacity: 1 !important;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}

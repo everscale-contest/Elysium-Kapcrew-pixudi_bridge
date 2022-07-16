@@ -1,4 +1,4 @@
-@import '~@/styles/index.scss';
+@import "~@/styles/index.scss";
 
 .wrapper {
     align-items: stretch;
@@ -8,8 +8,23 @@
     min-height: 100vh;
     position: relative;
     width: 100%;
+    // background-image: url("../styles/fonImage/FonDesktop.png");
+    // background-size: cover;
+    // position: relative;
 }
-
+.fon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    object-fit: cover;
+    opacity: 0.5;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
 .main {
     display: flex;
     flex-direction: column;
@@ -43,7 +58,12 @@
 }
 
 .wallets-scroll-area {
-    background: rgba(5, 11, 46, 0.9) linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08));
+    background: rgba(5, 11, 46, 0.9)
+        linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.08),
+            rgba(255, 255, 255, 0.08)
+        );
     bottom: 0;
     position: sticky;
 }

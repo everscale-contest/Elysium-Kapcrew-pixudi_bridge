@@ -27,6 +27,8 @@
 }
 
 .rc-select {
+    background: rgba(54, 56, 92, 0.6);
+    border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
     line-height: normal;
@@ -38,11 +40,12 @@
     @include flex;
 
     &--sm { min-height: 28px; }
-    &--md { min-height: 44px; }
+    &--md { min-height: 50px; }
     &--lg { min-height: 56px; }
 
     &-selector {
-        border: 1px solid rgb(255 255 255 / 24%);
+        border-radius: 6px;
+        // border: 1px solid rgb(255 255 255 / 24%);
         flex-wrap: wrap;
         padding: 0 40px 0 12px;
         position: relative;
@@ -193,7 +196,7 @@
     }
 
     &-dropdown {
-        background: #313551;
+        background: #3135519f;
         border: 0 none;
         border-radius: 0;
         box-shadow: 0 4px 16px rgb(0 0 0 / 9%);
