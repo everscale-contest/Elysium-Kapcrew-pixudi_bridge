@@ -1,0 +1,42 @@
+.text-muted,
+.text-muted a {
+    color: rgb(255 255 255 / 56%);
+}
+
+.text-danger {
+    color: rgb(235 67 97 / 85%);
+}
+
+.text-regular {
+    font-weight: 400;
+}
+
+.text-lg {
+    font-size: 18px;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+}
+
+.text-sm {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+.text-truncate {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}

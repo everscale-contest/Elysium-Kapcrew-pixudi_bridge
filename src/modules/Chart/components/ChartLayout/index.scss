@@ -1,0 +1,56 @@
+.chart-layout {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__head {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 24px;
+    }
+
+    &__chart {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        min-height: 320px;
+
+        .chart {
+            height: initial;
+            min-height: 320px;
+        }
+    }
+
+    &__message {
+        align-items: center;
+        display: flex;
+        font-size: 14px;
+        height: 100%;
+        justify-content: center;
+        left: 0;
+        letter-spacing: 0.5px;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        opacity: 0.45;
+    }
+
+    &__spinner {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        visibility: hidden;
+        width: 100%;
+
+        &_visible {
+            visibility: visible;
+        }
+    }
+}

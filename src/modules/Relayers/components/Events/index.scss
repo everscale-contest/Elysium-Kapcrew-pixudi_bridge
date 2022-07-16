@@ -1,0 +1,31 @@
+.events-table {
+    &.list {
+        --list-grid-template: minmax(200px, 20%) minmax(170px, 20%) minmax(170px, 20%) minmax(120px, 10%) minmax(150px, 20%) minmax(150px, 10%);
+    }
+}
+
+.events-type {
+    align-items: center;
+    column-gap: 12px;
+    display: flex;
+
+    &__type {
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.6px;
+        line-height: 20px;
+        margin: 0 0 2px;
+    }
+
+    &__info {
+        font-size: 12px;
+        letter-spacing: 0.6px;
+        line-height: 16px;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.48);
+    }
+
+    &__link {
+        color: rgba(255, 255, 255, 0.56);
+    }
+}

@@ -1,0 +1,35 @@
+.header {
+    align-items: center;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .navbar-item,
+        .navbar-toggle {
+            min-height: 44px;
+            @media (min-width: 768px) {
+                min-height: 64px;
+            }
+        }
+    }
+
+    .header-inner {
+        align-items: center;
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header-switchers {
+        align-items: center;
+        display: flex;
+        gap: 24px;
+        justify-content: space-between;
+    }
+}
+

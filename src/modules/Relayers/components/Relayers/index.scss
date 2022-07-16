@@ -1,0 +1,21 @@
+.relayers-status {
+    &_success {
+        color: #4ab44a;
+    }
+
+    &_fail {
+        color: #eb4361;
+    }
+}
+
+.relayers-table {
+    &.list {
+        --list-grid-template: 30px minmax(150px, 1fr) minmax(150px, 1fr) minmax(140px, 1fr) minmax(140px, 1fr) minmax(140px, 1fr) minmax(140px, 1fr) minmax(160px, 1fr);
+    }
+}
+
+.round-relayers-table {
+    &.list {
+        --list-grid-template: 30px minmax(150px, 1fr) minmax(150px, 1fr) minmax(140px, 1fr);
+    }
+}

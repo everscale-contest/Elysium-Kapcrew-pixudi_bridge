@@ -1,0 +1,13 @@
+.event-information {
+    &__title {
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0.6px;
+        line-height: 24px;
+    }
+
+    &__soon {
+        font-size: 13px;
+        opacity: 0.45;
+    }
+}
