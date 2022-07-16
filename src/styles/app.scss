@@ -27,7 +27,9 @@
 
     &--small { max-width: 520px; }
 
-    &--large { max-width: 1350px; }
+    &--large {  padding: 0 8%; 
+        // max-width: 1350px; 
+    }
 }
 
 .section {
@@ -37,6 +39,7 @@
    
 
     &__header {
+        font-family: 'Gamer Station';
         align-items: center;
         column-gap: 2em;
         display: flex;

@@ -1,0 +1,41 @@
+
+.blockHeader {
+  display: flex;
+  justify-content: center;
+}
+.header {
+  height: 110px;
+
+  width: 100%;
+  // padding: aut;
+  display: flex;
+  align-items: center;
+  // padding: 0 20px;
+  justify-content: space-between;
+  // margin: autp;
+  // margin-bottom: 3%;
+}
+.container{
+  display: flex;
+  // justify-content: center;
+  padding: 0 8%;
+  // max-width: 1350px;
+}
+.account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+}
+.walletId {
+
+  font-family:  "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #ffffff;
+
+  opacity: 0.8;
+}
