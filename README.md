@@ -1,4 +1,4 @@
-# OctusBridge frontend source code
+# Pixudi frontend source code
 
 ## Installation
 
