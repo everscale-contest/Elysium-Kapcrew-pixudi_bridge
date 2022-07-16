@@ -57,6 +57,18 @@ npm start
 
 It will be start Webpack Dev Server with HMR.
 
+## Structure Template
+```
+ |- /bridge.tsx
+ |- /index.scss
+ |- /svg
+ |-  /pixudi
+ |- src\components\App.tsx 
+
+```
+
+
+
 ## Build production distributive
 
 For build production distributive run the command below:
