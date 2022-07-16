@@ -59,11 +59,12 @@ It will be start Webpack Dev Server with HMR.
 
 ## Structure Template
 ```
- |- /bridge.tsx
- |- /index.scss
- |- /svg
- |-  /pixudi
- |- src\components\App.tsx 
+ |- /bridge.tsx - main changes (+ block with wallets)
+ |- /index.scss - changing styles
+ |- /svg - pictures for wallets (folder)
+ |-  /pixudi - (header avatar and styles) (folder)
+ |- src\components\App.tsx - Adding highlights and background
+ |- src\modules\Bridge\stores - main functionality + storage
 
 ```
 
