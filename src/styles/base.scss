@@ -14,12 +14,20 @@ body {
     -webkit-tap-highlight-color: transparent;
     width: 100%;
 }
-
+.page-title{
+    font-family: 'Gamer Station';
+    font-style: normal;
+}
 body {
+    font-family: "Muller" !important;
     background: radial-gradient(50% 100% at 0% 0%, rgba(247, 97, 42, 0.16) 0%, rgba(246, 97, 42, 0) 100%),
         radial-gradient(50% 100% at 100% 100%, rgba(197, 228, 243, 0.16) 0%, rgba(197, 228, 243, 0) 100%),
         #050b2e;
+    // background-image: url("../styles//fonImage/FonDesktop.png");
+    // background-size: cover;
     color: #ffffff;
+    width: 100%;
+    height: 100%;
     font: 400 16px/1.2 'PT Root UI', sans-serif;
     -moz-font-feature-settings: 'kern';
     -webkit-font-smoothing: antialiased;
@@ -53,6 +61,13 @@ hr {
     border: 0 none;
     margin: 0;
     padding: 0;
+    
+}
+hr{
+    background-color:  #ff7b0054;
+    // height: 1px;
+    // border:#ff7b00c9 1px solid ;
+    // border-radius: 50%;
 }
 
 ul li,
@@ -102,3 +117,16 @@ img {
     height: auto;
     margin: 0;
 }
+
+@font-face {
+    font-family: Muller; 
+    src: url("../styles/MullerRegular.ttf");
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: Gamer Station;
+    src: url("../styles/GamerStation.ttf");
+    font-style: normal;
+  }

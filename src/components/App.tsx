@@ -36,10 +36,12 @@ import Proposals from '@/pages/governance/proposals'
 import Proposal from '@/pages/governance/proposals/item'
 import ProposalCreate from '@/pages/governance/proposals/create'
 import { useEverWallet } from '@/stores/EverWalletService'
-import { useUpgradeTokens } from '@/stores/UpgradeTokens'
 import { noop } from '@/utils'
+import { useUpgradeTokens } from '@/stores/UpgradeTokens'
 
 import './App.scss'
+import mainLogo from './FonDesktop.png';
+
 
 
 export function App(): JSX.Element {
@@ -58,7 +60,8 @@ export function App(): JSX.Element {
             <Router>
                 <ScrollManager>
                     <div className="wrapper">
-                        <Header key="header" />
+                        <div className="fon"><img src={mainLogo} alt="" /></div>
+                        {/* <Header key="header" /> */}
                         <div className="main">
                             <Switch>
                                 <Route exact path="/">
@@ -133,7 +136,7 @@ export function App(): JSX.Element {
                                 </Route>
                             </Switch>
                         </div>
-                        <Footer key="footer" />
+                        {/* <Footer key="footer" /> */}
                     </div>
                 </ScrollManager>
                 <WalletConnectingModal />

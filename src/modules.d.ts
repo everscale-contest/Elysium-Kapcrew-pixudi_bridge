@@ -7,7 +7,10 @@ declare module '*.svg' {
     const content: any
     export default content
 }
-
+declare module '*.png' {
+    const content: any
+    export default content
+}
 declare module 'abi-decoder' {
     import { AbiItem } from 'web3-utils'
 

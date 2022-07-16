@@ -1,6 +1,6 @@
 .amount-field {
     align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.24);
+    // border: 1px solid rgba(255, 255, 255, 0.24);
     display: flex;
     transition: border 0.2s ease;
 
@@ -13,6 +13,7 @@
         border-color: rgba(255, 255, 255, 0.16);
 
         .form-input {
+            
             background-color: transparent;
         }
     }
@@ -33,6 +34,7 @@
     }
 
     .form-input {
+        
         border: 0 !important;
     }
 
