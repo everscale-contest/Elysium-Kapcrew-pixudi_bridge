@@ -16,6 +16,10 @@ import { useBridge } from '@/modules/Bridge/providers'
 import { CrosschainBridgeStep, EvmPendingWithdrawal } from '@/modules/Bridge/types'
 
 import './index.scss'
+import { SvgIconEver } from './svg/svgIconEver'
+import { SvgIconNear } from './svg/svgIconNear'
+import { SvgIconAda } from './svg/svgIconAda'
+import { SvgIconAvax } from './svg/svgIconAvax'
 
 
 type Props = {
@@ -36,41 +40,77 @@ export function Bridge({
             <div className="section__wrapper">
                 <main className="content">
                     <hr />
-                    <Observer>
-                        {() => {
-                            switch (bridge.step) {
-                                case CrosschainBridgeStep.SELECT_ASSET:
-                                    return <AssetStep key="asset" />
+                    <div className='blocks'>
 
-                                case CrosschainBridgeStep.SELECT_APPROVAL_STRATEGY:
-                                    return <ApproveStep key="approve" />
+                        <div className='wallets'>
+                            <header className="section__header">
+                                <h2 className="section-title">
+                                    <div className="small">
+                                        <div className='delete'>d</div>
+                                    </div>
+                                    Your Balance
+                                </h2>
+                            </header>
+                            <div className='walletsBlock'>
+                                <div className='blockWallet'>
+                                    <SvgIconEver />
 
-                                case CrosschainBridgeStep.TRANSFER:
-                                    if (bridge.isEvmToEverscale) {
-                                        return bridge.isSwapEnabled
-                                            ? <EvmSwapTransferStep key="evm-swap-transfer" />
-                                            : <EvmTransferStep key="evm-transfer" />
+                                </div>
+                                <div className='blockWallet'>
+                                    <SvgIconNear />
+
+                                </div>
+                                <div className='blockWallet'>
+                                    <SvgIconAvax />
+
+                                </div>
+                                <div className='blockWallet'>
+                                    <SvgIconAda />
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className='steps_form'>
+
+
+                            <Observer>
+                                {() => {
+                                    switch (bridge.step) {
+                                        case CrosschainBridgeStep.SELECT_ASSET:
+                                            return <AssetStep key="asset" />
+
+                                        case CrosschainBridgeStep.SELECT_APPROVAL_STRATEGY:
+                                            return <ApproveStep key="approve" />
+
+                                        case CrosschainBridgeStep.TRANSFER:
+                                            if (bridge.isEvmToEverscale) {
+                                                return bridge.isSwapEnabled
+                                                    ? <EvmSwapTransferStep key="evm-swap-transfer" />
+                                                    : <EvmTransferStep key="evm-transfer" />
+                                            }
+
+                                            if (bridge.isEvmToEvm) {
+                                                return (
+                                                    <EvmHiddenSwapTransferStep
+                                                        key="evm-hidden-swap-transfer"
+                                                    />
+                                                )
+                                            }
+
+                                            if (bridge.isEverscaleToEvm) {
+                                                return <EverscaleTransferStep key="ton-transfer" />
+                                            }
+
+                                            return null
+
+                                        default:
+                                            return <RouteStep key="step" />
                                     }
-
-                                    if (bridge.isEvmToEvm) {
-                                        return (
-                                            <EvmHiddenSwapTransferStep
-                                                key="evm-hidden-swap-transfer"
-                                            />
-                                        )
-                                    }
-
-                                    if (bridge.isEverscaleToEvm) {
-                                        return <EverscaleTransferStep key="ton-transfer" />
-                                    }
-
-                                    return null
-
-                                default:
-                                    return <RouteStep key="step" />
-                            }
-                        }}
-                    </Observer>
+                                }}
+                            </Observer>
+                        </div>
+                    </div>
                 </main>
 
                 <aside className="sidebar">

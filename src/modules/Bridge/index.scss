@@ -19,8 +19,8 @@
         letter-spacing: 0.06px;
         line-height: 24px;
         @media only screen and (min-width: 960px) {
-            max-width: 190px;
-            min-width: 190px;
+            max-width: 80px;
+            min-width: 80px;
         }
     }
 
@@ -64,7 +64,7 @@
         }
 
         @media only screen and (min-width: 1200px) {
-            width: calc(100% - 176px);
+            // width: calc(100% - 176px);
         }
 
     }
@@ -220,4 +220,31 @@
             width: 20px;
         }
     }
+}
+
+
+.blocks{
+    display: flex;
+    justify-content: space-between;
+}
+.steps_form{
+    width: 50%;
+}
+.wallets{
+    width: 40%;
+   
+}
+.walletsBlock{
+    padding: 40px;
+    background: rgba(22, 19, 44, 0.45);
+    border-radius: 8px;
+    width: 100%;
+    height: 448px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.delete{
+    opacity: 0;
 }
