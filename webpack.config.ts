@@ -100,7 +100,7 @@ export default (_: any, options: any): WebpackConfig => {
 
     config.plugins.push(
         new HtmlWebpackPlugin({
-            title: 'Cross-Chain Transactions | Octus Bridge',
+            title: 'Cross-Chain Transactions | PIXUDI',
             favicon: 'public/favicon.svg',
             filename: path.resolve(__dirname, 'dist/index.html'),
             template: 'public/index.html',

@@ -22,7 +22,7 @@ export default {
     WALLET_UPDATING_POPUP_NOTE: '<p> 귀하의 지갑 버전이 너무 오래되었습니다. <a href="https://chrome.google.com/webstore/detail/ever-wallet/cgeeodpfagjceefieflmdfphplkenlfk" target="_blank" rel="nofollow noopener noreferrer"> chrome.google.com </a> 또는 로컬, chrome://extensions/를 통해. </p> <p> 업데이트를 설치한 후 이 페이지를 새로고침하세요. </p>',
     WALLET_UPDATING_LINK_TEXT: '에버월릿 (EVER Wallet) 업데이트',
     WALLET_INSTALLATION_LINK_TEXT: '에버월릿 (EVER Wallet) 설치',
-    WALLET_INSTALLATION_NOTE: '<p> 현재는 에버월릿(EVER Wallet)만 옥터스 브리지(Octus Bridge)를 지원합니다. </p> <p> 확장 프로그램을 아직 설치하지 않았다면 <a href="https://chrome.google.com/webstore/detail/ever-wallet/cgeeodpfagjceefieflmdfphplkenlfk" target="_blank" rel="nofollow noopener noreferrer"> 에서 할 수 있습니다. <a href="https://chrome.google.com/webstore/detail/ever-wallet/cgeeodpfagjceefieflmdfphplkenlfk" target="_blank" rel="nofollow noopener noreferrer"> chrome.google.com </a> </p>',
+    WALLET_INSTALLATION_NOTE: '<p> 현재는 에버월릿(EVER Wallet)만 옥터스 브리지(PIXUDI)를 지원합니다. </p> <p> 확장 프로그램을 아직 설치하지 않았다면 <a href="https://chrome.google.com/webstore/detail/ever-wallet/cgeeodpfagjceefieflmdfphplkenlfk" target="_blank" rel="nofollow noopener noreferrer"> 에서 할 수 있습니다. <a href="https://chrome.google.com/webstore/detail/ever-wallet/cgeeodpfagjceefieflmdfphplkenlfk" target="_blank" rel="nofollow noopener noreferrer"> chrome.google.com </a> </p>',
     WALLET_BALANCE_HINT: '{value} {currency}',
     WALLET_CONNECTING: '연결 중...',
     WALLET_CONNECT_MSG: '계속하려면 지갑을 연결해야 합니다.',
