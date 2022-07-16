@@ -1,4 +1,10 @@
-# Pixudi frontend source code
+# Pixudi Bridge
+
+![Screen Shot 2022-07-16 at 10 37 05](https://user-images.githubusercontent.com/61367249/179345334-76c6adb3-0f65-44cf-ac71-0d3072067e4c.png)
+
+## Interface
+
+![my wallet](https://user-images.githubusercontent.com/61367249/179351482-99ffe99d-6dde-4db7-8424-76dfbf5456d4.jpg)
 
 ## Installation
 
