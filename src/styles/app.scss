@@ -27,7 +27,7 @@
 
     &--small { max-width: 520px; }
 
-    &--large { max-width: 1200px; }
+    &--large { max-width: 1350px; }
 }
 
 .section {
@@ -124,6 +124,7 @@
 }
 
 .sidebar {
+    display: none;
     max-width: 100%;
     width: 100%;
 
