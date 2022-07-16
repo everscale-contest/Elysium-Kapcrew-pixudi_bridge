@@ -1,0 +1,50 @@
+// @import "/scss";
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+.border {
+  width: 55px;
+  height: 60px;
+  position: absolute;
+}
+.borderActive {
+  width: 67px;
+  height: 67px;
+  position: absolute;
+}
+.avatar img {
+  border-radius: 50%;
+  width: 102%;
+  height: 102%;
+  object-fit: cover;
+}
+
+
+.avatarProfile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 113px;
+  height: 113px;
+  border-radius: 50%;
+}
+.avatarProfile img {
+  border-radius: 50%;
+  width: 102%;
+  height: 102%;
+  object-fit: cover;
+}
+
+.borderProfile {
+  width: 116px;
+  height: 116px;
+  position: absolute;
+}

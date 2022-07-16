@@ -14,12 +14,12 @@ import {
 import { Debug } from '@/modules/Bridge/components/Debug'
 import { useBridge } from '@/modules/Bridge/providers'
 import { CrosschainBridgeStep, EvmPendingWithdrawal } from '@/modules/Bridge/types'
-
+import { ethers } from "ethers";
 import './index.scss'
-import { SvgIconEver } from './svg/svgIconEver'
-import { SvgIconNear } from './svg/svgIconNear'
-import { SvgIconAda } from './svg/svgIconAda'
-import { SvgIconAvax } from './svg/svgIconAvax'
+import { SvgIconEver } from './components/svg/svgIconEver'
+import { SvgIconNear } from './components/svg/svgIconNear'
+import { SvgIconAda } from './components/svg/svgIconAda'
+import { SvgIconAvax } from './components/svg/svgIconAvax'
 
 
 type Props = {
@@ -35,6 +35,28 @@ export function Bridge({
         bridge.setState('evmPendingWithdrawal', evmPendingWithdrawal)
     }, [evmPendingWithdrawal])
 
+    const authAvalanche = async () => {
+        try {
+            const ethereum = window.ethereum;
+            if (!ethereum) {
+                return alert("You need to install the metamax extension")
+            }
+            await window.ethereum.request({ method: 'eth_requestAccounts' });
+
+            const provider: ethers.providers.Web3Provider = new ethers.providers.Web3Provider(
+                ethereum as ethers.providers.ExternalProvider
+            );
+            console.log("getNetwork()", await provider.getNetwork())
+            const signer: ethers.providers.JsonRpcSigner = provider.getSigner();
+            console.log("signer.getBalance()", await signer.getBalance())
+            // const walletAddress: string = await signer.getAddress();
+
+
+        } catch (error) {
+            alert("error")
+        }
+
+    };
     return (
         <section className="section">
             <div className="section__wrapper">
@@ -51,7 +73,7 @@ export function Bridge({
                                     Your Balance
                                 </h2>
                             </header>
-                            <div className='walletsBlock'>
+                            <div className='walletsBlock' onClick={() => { }}>
                                 <div className='blockWallet'>
                                     <div>
                                         <SvgIconEver />
@@ -73,7 +95,7 @@ export function Bridge({
                                     </div>
 
                                 </div>
-                                <div className='blockWallet'>
+                                <div className='blockWallet' onClick={authAvalanche}>
 
                                     <div>
                                         <SvgIconAvax />
