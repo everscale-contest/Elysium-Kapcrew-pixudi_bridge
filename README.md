@@ -13,10 +13,9 @@ Thus, we are preparing a comfortable and beautiful solution in terms of design, 
 
 ## 🎉 Tasks
 
-
-
  - [x] Integration of Bridge
  - [x] Connect Wallet (ETH Wallets)(Supports Other Wallets 🚀)
+ - [x] Metamask & Ever Wallet Integration
  - [x] Design according to guidelines and our Pixudi Design
  - [x] Figma design
 
@@ -25,6 +24,7 @@ Thus, we are preparing a comfortable and beautiful solution in terms of design, 
 ## 🎉 Figma
 
 https://www.figma.com/file/RCthS0S5m47tQWhLAgPDzV/pixudi_bridge_everscale?node-id=293%3A30
+
 
 
 ## Interface
