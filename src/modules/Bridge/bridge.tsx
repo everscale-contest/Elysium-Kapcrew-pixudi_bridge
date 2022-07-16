@@ -39,7 +39,7 @@ export function Bridge({
         <section className="section">
             <div className="section__wrapper">
                 <main className="content">
-                    <hr />
+                    {/* <hr /> */}
                     <div className='blocks'>
 
                         <div className='wallets'>

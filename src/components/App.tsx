@@ -41,6 +41,7 @@ import { useUpgradeTokens } from '@/stores/UpgradeTokens'
 
 import './App.scss'
 import mainLogo from './FonDesktop.png';
+import blick from './Blick.png';
 
 
 
@@ -61,6 +62,7 @@ export function App(): JSX.Element {
                 <ScrollManager>
                     <div className="wrapper">
                         <div className="fon"><img src={mainLogo} alt="" /></div>
+                        <div className='fon'><img src={blick} alt="" /></div>
                         {/* <Header key="header" /> */}
                         <div className="main">
                             <Switch>
